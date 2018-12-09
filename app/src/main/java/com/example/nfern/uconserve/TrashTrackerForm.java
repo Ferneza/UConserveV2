@@ -14,7 +14,7 @@ public class TrashTrackerForm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trash_tracker_form);
 
-        //dont need this
+        //dont need this.
 //        Button submitBtn = (Button)findViewById(R.id.submitBtn);
 //        submitBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
