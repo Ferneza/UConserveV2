@@ -27,13 +27,10 @@ public class AddLocationForm extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
+                Toast.makeText(getApplicationContext(), "Sucessfully added!", Toast.LENGTH_LONG).show();
                 Intent startIntent = new Intent(getApplicationContext(), GoogleMaps.class);
                 startActivity(startIntent);
             }
         });
-    }
-
-    public void successMessage(View view) {
-        Toast.makeText(this, "Sucessfully tracked!", Toast.LENGTH_LONG).show();
     }
 }
