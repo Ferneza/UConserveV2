@@ -92,6 +92,15 @@ public class GoogleMaps extends FragmentActivity implements OnMapReadyCallback {
                 startActivity(startIntent);
             }
         });
+
+        Button returnBtn = (Button)findViewById(R.id.returnBtn);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent startIntent = new Intent(getApplicationContext(), HomeScreen.class);
+                startActivity(startIntent);
+            }
+        });
     }
 
 

@@ -18,7 +18,16 @@ public class AddLocationForm extends AppCompatActivity {
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent startIntent = new Intent(getApplicationContext(), TrashTracker.class);
+                Intent startIntent = new Intent(getApplicationContext(), GoogleMaps.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button submitBtn = (Button)findViewById(R.id.submitBtn);
+        submitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent startIntent = new Intent(getApplicationContext(), GoogleMaps.class);
                 startActivity(startIntent);
             }
         });
