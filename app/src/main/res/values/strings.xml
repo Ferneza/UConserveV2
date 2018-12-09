@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UConserve</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_trash_tracker">TrashTracker</string>
+</resources>
