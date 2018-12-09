@@ -34,6 +34,7 @@
         <activity android:name=".TrashTrackerForm"></activity>
         <activity android:name=".GoogleMaps"
             android:hardwareAccelerated="true"></activity>
+        <activity android:name=".AddLocationForm"></activity>
     </application>
 
 </manifest>

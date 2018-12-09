@@ -1,7 +1,10 @@
 package com.example.nfern.uconserve;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -80,6 +83,15 @@ public class GoogleMaps extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Button addLocationBtn = (Button)findViewById(R.id.addLocationBtn);
+        addLocationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent startIntent = new Intent(getApplicationContext(), AddLocationForm.class);
+                startActivity(startIntent);
+            }
+        });
     }
 
 

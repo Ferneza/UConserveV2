@@ -15,12 +15,12 @@
         tools:context="com.henriquevoni.petgo.MapFragment">
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/addLocationBtn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right|top"
-            android:layout_marginBottom="39dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="42dp"
+            android:layout_marginLeft="12dp"
             android:background="#359c5e"
             android:text="Add Location"
             android:textColor="#ffffff"
