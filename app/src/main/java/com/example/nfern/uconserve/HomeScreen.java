@@ -31,5 +31,14 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        Button googleMapsBtn = (Button)findViewById(R.id.googleMapsBtn);
+        googleMapsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent startIntent = new Intent(getApplicationContext(), GoogleMaps.class);
+                startActivity(startIntent);
+            }
+        });
     }
 }

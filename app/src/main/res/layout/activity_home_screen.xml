@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.46" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/googleMapsBtn"
         android:layout_width="174dp"
         android:layout_height="123dp"
         android:layout_marginStart="8dp"
