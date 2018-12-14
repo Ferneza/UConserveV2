@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -14,6 +15,25 @@
         android:layout_weight="1"
         tools:context="com.henriquevoni.petgo.MapFragment">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
         <Button
             android:id="@+id/addLocationBtn"
             android:layout_width="100dp"
@@ -21,7 +41,8 @@
             android:layout_gravity="right|top"
             android:layout_marginBottom="42dp"
             android:layout_marginLeft="12dp"
-            android:background="#359c5e"
+            android:layout_marginRight="12dp"
+            android:background="@null"
             android:text="Add Location"
             android:textColor="#ffffff"
 
@@ -34,7 +55,7 @@
             android:layout_gravity="left|top"
             android:layout_marginBottom="42dp"
             android:layout_marginLeft="0dp"
-            android:background="#359c5e"
+            android:background="@null"
             android:text="Back"
             android:textColor="#ffffff"
 

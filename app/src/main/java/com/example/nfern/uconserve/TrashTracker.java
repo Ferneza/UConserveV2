@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.support.v7.widget.Toolbar;
 
 public class TrashTracker extends AppCompatActivity {
 
@@ -20,6 +21,20 @@ public class TrashTracker extends AppCompatActivity {
             public void onClick(View v){
                 Intent startIntent = new Intent(getApplicationContext(), TrashTrackerForm.class);
                 startActivity(startIntent);
+            }
+        });
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),HomeScreen.class));
+                finish();
             }
         });
     }
